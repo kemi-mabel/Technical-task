@@ -8,14 +8,12 @@ Output: “g”"""
 
 def most_occur(string):
     counts = dict()
-    #words = string.split(" ")
-    #print(words)
-
-    for word in string:
-        if word in counts:
-            counts[word] = counts[word] + 1
+    # adding each letter to the dictionary and populating their count
+    for letter in string:
+        if letter in counts:
+            counts[letter] = countsletter] + 1
         else:
-            counts[word] = 1
+            counts[letter] = 1
     print(counts)
     # Find item with Max Value in Dictionary
     max_value = max(counts.items(), key=lambda x: x[1]) # max(iterable, *[, key, default])
