@@ -8,8 +8,8 @@ and the second index should hold the sum of the odd integers."""
 def task1(num):
     even_sum = 0
     odd_sum = 0
-    for i in num:
-        if i % 2 == 0:
+    for i in num:  # for each nunmer in array
+        if i % 2 == 0:  # comparing i modulus to 0
             even_sum += i
         else:
             odd_sum += i
