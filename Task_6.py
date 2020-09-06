@@ -6,15 +6,14 @@ Input: [1, 2, 3, 4, 5, 6], 6
 Output: [1, 2, 3]"""
 
 
-def find3Numbers(A, arr_size, sum):
+def find3numbers(A, arr_size, sum):
     # Fix the first element as A[i]
     for i in range(0, arr_size - 2):
         # Fix the second element as A[j]
-
         for j in range(i + 1, arr_size - 1):
-            # Now look for the third number
+            # Now fix the third element
             for k in range(j + 1, arr_size):
-                if A[i] + A[j] + A[k] == sum:
+                if A[i] + A[j] + A[k] == sum:  # comparing the 3 elements together
                     print("Triplet is", A[i], ", ", A[j], ", ", A[k])
 
 
@@ -27,4 +26,4 @@ def find3Numbers(A, arr_size, sum):
 A = [1, 4, 45, 5, 10, 2]
 sum = 22
 arr_size = len(A)
-find3Numbers(A, arr_size, sum)
+find3numbers(A, arr_size, sum)
